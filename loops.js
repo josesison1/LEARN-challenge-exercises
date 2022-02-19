@@ -1,12 +1,13 @@
 // Challenges
 // Logging values with for loops
+
 // Write a for loop that logs each number from 1 - 20.
 
 for (let i=1; i <= 20; i++) {
   console.log(i)
 }
 
-Write a for loop that logs the result of each number from 1 - 20 tripled.
+//Write a for loop that logs the result of each number from 1 - 20 tripled.
 
 for (let i=1; i <= 20; i++) {
   console.log(i * 3);
