@@ -2,8 +2,6 @@
 
 // ******** WHITEBOARDING INTERVIEW QUESTIONS ******** //
 
-
-
 //PROMPT: create a function that takes in a string of array and output the array in all upperCase
 
 // input: string of array
@@ -37,6 +35,7 @@ const upperCase = (array) => {
 //log by calling onto the function name and calling onto the variable as argument
 console.log(upperCase(arr))
 
+//----------------------------------------------------------------------------//
 
 //PROMPT: Given an array of different value types, return only the string values
 
@@ -70,3 +69,5 @@ const onlyNames = (array) => {
 }
 //log by calling onto the function name and referring to the variable as argument
 console.log(onlyNames(list))
+
+//----------------------------------------------------------------------------//
