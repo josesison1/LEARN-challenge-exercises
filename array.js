@@ -1,4 +1,4 @@
-// Challenges
+// Arrays Challenges
 
 // Consider the variable:
 var groceryList = ["chips", "dip", "cookies"]
