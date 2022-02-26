@@ -1,4 +1,4 @@
-// Challenges
+// Conditionals Challenges
 
 // Write a statement that takes a variable of item and logs "in budget" if a price is $100 or less.
 var inBudget = 85
