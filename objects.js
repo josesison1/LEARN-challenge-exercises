@@ -1,4 +1,4 @@
-// Challenges
+// Objects Challenges
 // Consider this variable:
 var person = {
   firstName: "Arthur",
