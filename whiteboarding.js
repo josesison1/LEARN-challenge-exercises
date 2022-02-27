@@ -70,4 +70,16 @@ const onlyNames = (array) => {
 //log by calling onto the function name and referring to the variable as argument
 console.log(onlyNames(list))
 
+//OR
+
+//function declaration that takes an array w/ different values
+const onlyNames = (array) => {
+  //create new variable to store new filtered array
+  var newArr = array.filter(value => {
+    //only return the values that is type of string
+    return typeof value === "string"
+  })
+  //return new variable created that contains string values
+  return newArr
+}
 //----------------------------------------------------------------------------//
