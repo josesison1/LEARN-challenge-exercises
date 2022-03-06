@@ -83,3 +83,28 @@ const onlyNames = (array) => {
   return newArr
 }
 //----------------------------------------------------------------------------//
+
+// PROMPT: Given a string of different names, take the first letter of
+// each name and output those letters collected into a string
+
+//input: "Eddie, Lauren, Jay, Maria, Mike"
+//output: JVJMS
+
+//create a function
+//must take in a string as a parameter
+//declare a new variable and set it to the input and use the split method - 
+//to separate each name into it's own array, and use .map() to iterate
+//through the array and return each 0 index, which will be stored
+//in the new variable, return the new variable which will contain 
+//the first letters of every name and use .join() method to return
+//it back into a string
+
+let names = "Eddie, Lauren, Jay, Maria, Mike"
+
+const letter = (string) => {
+       let letters = string.split(" ").map(word => {
+        return word[0]
+    })
+    return letters.join("")
+}
+    console.log(letter(names))
