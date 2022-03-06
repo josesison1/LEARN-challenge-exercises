@@ -88,7 +88,7 @@ const onlyNames = (array) => {
 // each name and output those letters collected into a string
 
 //input: "Eddie, Lauren, Jay, Maria, Mike"
-//output: JVJMS
+//output: ELJMM
 
 //create a function
 //must take in a string as a parameter
