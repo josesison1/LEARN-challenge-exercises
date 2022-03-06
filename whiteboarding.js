@@ -102,8 +102,8 @@ const onlyNames = (array) => {
 let names = "Eddie, Lauren, Jay, Maria, Mike"
 
 const letter = (string) => {
-       let letters = string.split(" ").map(word => {
-        return word[0]
+       let letters = string.split(" ").map(value => {
+        return value[0]
     })
     return letters.join("")
 }
