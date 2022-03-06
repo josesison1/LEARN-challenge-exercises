@@ -108,3 +108,4 @@ const letter = (string) => {
     return letters.join("")
 }
     console.log(letter(names))
+//output: ELJMM
