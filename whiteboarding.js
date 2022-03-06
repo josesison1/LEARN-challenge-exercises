@@ -34,6 +34,7 @@ const upperCase = (array) => {
 }
 //log by calling onto the function name and calling onto the variable as argument
 console.log(upperCase(arr))
+//output: ["MAKE", "ME", "UPPERCASE"]
 
 //----------------------------------------------------------------------------//
 
@@ -82,6 +83,10 @@ const onlyNames = (array) => {
   //return new variable created that contains string values
   return newArr
 }
+
+  console.log(onlyNames(list))
+//output: ["jose", "ryan"]
+
 //----------------------------------------------------------------------------//
 
 // PROMPT: Given a string of different names, take the first letter of
@@ -99,12 +104,19 @@ const onlyNames = (array) => {
 //the first letters of every name and use .join() method to return
 //it back into a string
 
+//input example:
 let names = "Eddie, Lauren, Jay, Maria, Mike"
 
+//function declaration, taking a string parameter
 const letter = (string) => {
+  //declaring new variable and set it to the value of the input,
+  //splitting each name into its own array and iterating through
        let letters = string.split(" ").map(value => {
+         //return each value at 0 index
         return value[0]
     })
+       //return the new variable containing the first letters of every word
+       //use join method to turn the array back into a string
     return letters.join("")
 }
     console.log(letter(names))
