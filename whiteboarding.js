@@ -121,3 +121,39 @@ const letter = (string) => {
 }
     console.log(letter(names))
 //output: ELJMM
+
+
+
+//Create a function that takes in a string and returns a coded message. The coded message converts 'a' to 4, 'e' to 3, 'i' to 1, and 'o' to 0.
+
+//========================== PSEUDO CODE ====================================//
+//create a function called "codedMessage".
+//must take in a string as a parameter named "str"
+//declare a new variable named "newCode" and set it equals to str.split() which would turn the
+//string into an array and .map() to iterate through the array to return the same 
+//amount of values. 
+//convert letters of "a" => 4, "e" => 3, "i" => 1, and "o" => 0 by using a conditional
+//if/else statement. 
+//if value is strictly equals to 'a' and utilize the .toLowerCase() method to turn the string into lowercase 
+//then return "4" to convert the letter to a number, repeat the same process with the other 
+//letters in the else if statements. and lastly set else condition to return just the value
+//in order for it to return the letter that doesnt meet those conditions.
+//return the new declared variable "newCode" 
+//===========================================================================//
+
+const codedMessage = (str) => {
+    let newCode = str.split("").map(v => {
+      if (v.toLowerCase() === 'a') {
+        return "4" 
+      } else if (v.toLowerCase() === 'e') {
+        return "3"
+      } else if (v.toLowerCase() === 'i') {
+        return "1" 
+      } else if (v.toLowerCase() === 'o') {
+        return "0"
+      } else {
+        return v
+      }
+    })
+    return newCode.join("")
+  }
