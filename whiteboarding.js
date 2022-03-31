@@ -157,3 +157,23 @@ const codedMessage = (str) => {
     })
     return newCode.join("")
   }
+
+
+
+
+//CODEWARS CHALLENGE
+//Define String.prototype.toAlternatingCase (or a similar function/method such as to_alternating_case/toAlternatingCase/ToAlternatingCase in your 
+//selected language; see the initial solution for details) such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase.
+let str = "hi my name is JOSE"
+
+const func = (str) => {
+  let newstr = ""
+  for (let i = 0; i < string.length; i++) {
+      if (string[i] === string[i].toUpperCase()){
+        newstr += string[i].toLowerCase()
+      } else {
+        newstr += string[i].toUpperCase()
+      }
+    }
+    return newstr
+}
