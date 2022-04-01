@@ -1,7 +1,5 @@
 // Make a program that filters a list of strings and returns a list with only your friends name in it.
-
 // If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
-
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
 
@@ -18,7 +16,6 @@ console.log(friend(friends))
 
 
 // In this Kata the aim is to compare each pair of integers from 2 arrays, and return a new array of large numbers.
-
 // Note: Both arrays have the same dimensions.
 
 
@@ -65,7 +62,7 @@ const geese = (arr, brr) => {
     return newArrr
 }
 
-// console.log(geese(ar1,ar2))
+console.log(geese(ar1,ar2))
 
 // OR 
 
@@ -79,11 +76,8 @@ console.log(geeses(arrr1,arrr2))
 
 
 // Write a function findNeedle() that takes an array full of junk but containing one "needle"
-
 // After your function finds the needle it should return a message (as a string) that says:
-
 // "found the needle at position " plus the index it found the needle, so:
-
 // findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 // should return "found the needle at position 5" (in COBOL "found the needle at position 6")
 
@@ -139,7 +133,6 @@ function arithmetic(a, b, operator){
     return a / b 
     }
 }
-
 
 
 
