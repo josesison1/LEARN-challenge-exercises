@@ -13,7 +13,7 @@ const friend = (array) => {
     })
    return newFriend
 }
-// console.log(friend(friends))
+console.log(friend(friends))
 
 
 
@@ -37,7 +37,7 @@ const bigger = (array1, array2) => {
     return newArr
 }
 
-// console.log(bigger(arr1, arr2))
+console.log(bigger(arr1, arr2))
 
 
 // Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
@@ -74,7 +74,7 @@ const geeses = (array1, array2) => {
     return newArray
 }
 
-// console.log(geeses(arrr1,arrr2))
+console.log(geeses(arrr1,arrr2))
 
 
 
@@ -101,8 +101,7 @@ const findNeedle = (arr) => {
     return `found the needle at position ${arr.indexOf('needle')}`
     }
 
-// console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
-
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
 
 
@@ -120,4 +119,51 @@ const palindrome = (str) => {
 }
 
 
-// console.log(palindrome(palin))
+console.log(palindrome(palin))
+
+
+
+
+// Given two numbers and an arithmetic operator (the name of it, as a string), return the result of the two numbers having that operator used on them.
+// a and b will both be positive integers, and a will always be the first number in the operation, and b always the second.
+// The four operators are "add", "subtract", "divide", "multiply".
+
+function arithmetic(a, b, operator){
+  if (operator === "add") {
+    return a + b 
+  } else if (operator === "subtract") {
+    return a - b 
+    } else if (operator === "multiply") {
+    return a * b 
+    } else if (operator === "divide") {
+    return a / b 
+    }
+}
+
+
+
+
+
+
+// Given a string, swap the case for each of the letters.
+
+// Examples
+// ""           -->   ""
+// "CodeWars"   -->   "cODEwARS"
+// "abc"        -->   "ABC"
+// "ABC"        -->   "abc"
+// "123235"     -->   "123235"
+
+
+function swap(str){
+let newStr = ""
+for(let i=0; i < str.length; i++){
+  if (str[i] === str[i].toUpperCase()){
+      newStr += str[i].toLowerCase()
+  } else {
+      newStr += str[i].toUpperCase()
+  }
+}
+  return newStr
+}
+
