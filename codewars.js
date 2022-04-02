@@ -147,7 +147,6 @@ function arithmetic(a, b, operator){
 // "ABC"        -->   "abc"
 // "123235"     -->   "123235"
 
-
 function swap(str){
 let newStr = ""
 for(let i=0; i < str.length; i++){
@@ -160,3 +159,28 @@ for(let i=0; i < str.length; i++){
   return newStr
 }
 
+
+
+//Given a sequence of numbers, find the largest pair sum in the sequence.
+
+// For example
+// [10, 14, 2, 23, 19] -->  42 (= 23 + 19)
+// [99, 2, 2, 23, 19]  --> 122 (= 99 + 23)
+
+function largestPairSum (numbers) {
+  numbers.sort((b,a) => a-b)
+  return numbers[0] + numbers[1]
+}
+
+
+// Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
+
+// Example:
+// "riley" --> "Hello Riley!"
+// "JACK"  --> "Hello Jack!"
+
+var greet = function(name) {
+  let newname = name.toLowerCase() 
+  let newnew = newname[0].toUpperCase() + newname.slice(1)
+  return `Hello ${newnew}!`
+}
