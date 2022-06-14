@@ -225,22 +225,24 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
 // XO("zzoo") => false
 
 function XO(str) {
-  let newstr = str.toLowerCase()
-  let split = newstr.split("")
+  let newStr = str.toLowerCase().split("")
   let ex = []
   let oh = []
-  console.log(split)
-  for(let i=0; i < split.length; i++) {
-    if (split[i] === "x") {
-      ex.push(split[i])
-    } else if (split[i] === "o") {
-      oh.push(split[i])
+  console.log(newStr)
+     
+  for(let i=0; i < newStr.length; i++) {
+    if (newStr[i] === "x") {
+      ex.push(newStr[i])
+    } else if (newStr[i] === "o") {
+      oh.push(newStr[i])
     }
     }
   if (ex.length === oh.length){
     return true
-  }  else {
+    } else {
     return false
+    }
+  }
        
        
        
@@ -258,15 +260,13 @@ function XO(str) {
    function stray(numbers) {
     let strayChar = numbers[0]
 
-    // see if it is different from the next 2
     if (strayChar !== numbers[1] && strayChar !== numbers[2]) {
       return strayChar
-}
-    // if not find the first value that is different
+     }
+        
     for(let i = 1; i < numbers.length; i++){
-      if(strayChar !== numbers[i])return numbers[i]
-    }
-}    
-       
-  }
-  }
+      if(strayChar !== numbers[i]) {
+           return numbers[i]
+      }
+    }    
+ }
