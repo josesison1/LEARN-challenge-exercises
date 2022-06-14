@@ -209,3 +209,64 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
     return false
   }
 }
+
+
+
+
+// Check to see if a string has the same amount of 'x's and 'o's. 
+// The method must return a boolean and be case insensitive. The string can contain any char.
+
+// Examples input/output:
+
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+// XO("zzoo") => false
+
+function XO(str) {
+  let newstr = str.toLowerCase()
+  let split = newstr.split("")
+  let ex = []
+  let oh = []
+  console.log(split)
+  for(let i=0; i < split.length; i++) {
+    if (split[i] === "x") {
+      ex.push(split[i])
+    } else if (split[i] === "o") {
+      oh.push(split[i])
+    }
+    }
+  if (ex.length === oh.length){
+    return true
+  }  else {
+    return false
+       
+       
+       
+// DESCRIPTION:
+// You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+
+// Complete the method which accepts such an array, and returns that single different number.
+
+// The input array will always be valid! (odd-length >= 3)
+
+// Examples
+// [1, 1, 2] ==> 2
+// [17, 17, 3, 17, 17, 17, 17] ==> 3    
+       
+   function stray(numbers) {
+    let strayChar = numbers[0]
+
+    // see if it is different from the next 2
+    if (strayChar !== numbers[1] && strayChar !== numbers[2]) {
+      return strayChar
+}
+    // if not find the first value that is different
+    for(let i = 1; i < numbers.length; i++){
+      if(strayChar !== numbers[i])return numbers[i]
+    }
+}    
+       
+  }
+  }
