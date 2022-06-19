@@ -272,35 +272,21 @@ function XO(str) {
  }
 
 
+
 // DESCRIPTION:
-// Check to see if a string has the same amount of 'x's and 'o's. 
-// The method must return a boolean and be case insensitive. The string can contain any char.
+// You can print your name on a billboard ad. Find out how much it will cost you. 
+// Each letter has a default price of £30, but that can be different if you are given 2 parameters instead of 1.
 
-// Examples input/output:
+// You can not use multiplier "*" operator.
 
-// XO("ooxx") => true
-// XO("xooxx") => false
-// XO("ooxXm") => true
-// XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
-// XO("zzoo") => false
+// If your name would be Jeong-Ho Aristotelis, ad would cost £600. 20 leters * 30 = 600 (Space counts as a letter).
 
 
-function XO(str) {
-  let newStr = str.toLowerCase().split("")
-  let ex = []
-  let oh = []
-  console.log(newStr)
-     
-  for(let i=0; i < newStr.length; i++) {
-    if (newStr[i] === "x") {
-      ex.push(newStr[i])
-    } else if (newStr[i] === "o") {
-      oh.push(newStr[i])
-    }
-    }
-  if (ex.length === oh.length){
-    return true
-    } else {
-    return false
-    }
+function billboard(name, price = 30){
+  let sum =0;
+  
+  for (let i=1;i <= name.length;i++){
+    sum += price
   }
+  return sum
+} 
